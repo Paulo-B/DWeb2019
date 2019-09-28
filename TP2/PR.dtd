@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT PR (header,team,abs,deliverables,data)>
+<!ELEMENT header (keyname,title,subtitle?,dataB,dataE,supervisor)>
+<!ELEMENT keyname (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT subtitle (#PCDATA)>
+<!ELEMENT dataB (data)>
+<!ELEMENT dataE (data)>
+<!ELEMENT supervisor (link) >
+<!ELEMENT link (texto)>
+<!ATTLIST link url CDATA #IMPLIED>
+<!ELEMENT texto (#PCDATA)>
+<!ELEMENT team (elemento+)>
+<!ELEMENT elemento (id,texto,mail,git?)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT mail (link)>
+<!ELEMENT git (link)>
+<!ELEMENT abs (#PCDATA | bold | italico | link)*>
+<!ELEMENT deliverables (link)*>
+<!ELEMENT data (#PCDATA)>
+<!ELEMENT bold (#PCDATA)>
+<!ELEMENT italico (#PCDATA)>
+
+
+

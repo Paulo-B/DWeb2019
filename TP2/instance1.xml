@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="file:/home/apocas/Desktop/EngenhariaInformatica/DAW/PR.xsd">
+    <header>
+        <keyname>TP2</keyname>
+        <title>PR DTD,Arqueossitios DTD e Exercicios de XPATH </title>
+        <subtitle>
+            Relatorio do TP2 inserido na cadeira de DAW
+        </subtitle>
+        <dataB>
+            <data>26 Setembro 2019</data>
+        </dataB>
+        <dataE>
+            <data>26 Setembro 2019</data>
+        </dataE>
+        <supervisor>
+            <link url="http://www.di.uminho.pt/~jcr">
+                <texto>José Carlos Ramalho</texto>
+            </link>
+        </supervisor>
+    </header>
+    <team>
+        <elemento>
+            <id>A81139</id>
+            <texto>Paulo Jorge Bento Rosa</texto>
+            <mail>
+                <link>
+                    <texto>a81139@alunos.uminho.pt</texto>
+                </link>
+            </mail>
+            <git>
+                <link url="https://github.com/Paulo-B/DWeb2019">
+                    <texto>Paulo-B</texto>
+                </link>
+            </git>
+        </elemento>
+    </team>
+    <abs>
+        O DTD definido permite definir a estrutura deste Project Record permitindo de uma forma mais standard tratar a informaçao.
+        Adjuntamente tambem se encontra outro DTD gerado a partir do XML exemplo para arqueossitio atraves do Oxygen Editor solicitado na <link url="http://www4.di.uminho.pt/~jcr/XML/CURSOS/PED2008/fichas/ficha3/e7.html">
+            <texto>Ficha 3- Exercicio 7</texto>
+        </link>.Finalmente tambem existe um ficheiro que responde aos exercicios de querie sobre o mesmo que se encontra em <link url="http://www4.di.uminho.pt/~jcr/XML/CURSOS/PED2008/fichas/ficha3/e6.html">
+            <texto>Ficha 3 - Exercicio 6</texto>
+        </link>
+    </abs>
+    <deliverables>
+        <link url="arq.dtd">
+            <texto>DTD dos Arqueossitios</texto>
+        </link>
+        <link url="PR.dtd">
+            <texto>DTD do Project Record</texto>
+        </link>
+        <link url="queries">
+            <texto>Queries XPath</texto>
+        </link>
+        <link url="arq.xml">
+            <texto>XML exemplo dos arqueossitios</texto>
+        </link>
+        <link url="PR.xsd">
+            <texto>XML Schema do PR</texto>
+        </link>
+    </deliverables>
+    <data>26-09-2019</data>
+</PR>

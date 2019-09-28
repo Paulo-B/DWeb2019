@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="PR">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="header"/>
+        <xs:element ref="team"/>
+        <xs:element ref="abs"/>
+        <xs:element ref="deliverables"/>
+        <xs:element ref="data"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="header">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="keyname"/>
+        <xs:element ref="title"/>
+        <xs:element minOccurs="0" ref="subtitle"/>
+        <xs:element ref="dataB"/>
+        <xs:element ref="dataE"/>
+        <xs:element ref="supervisor"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="keyname" type="xs:string"/>
+  <xs:element name="title" type="xs:string"/>
+  <xs:element name="subtitle" type="xs:string"/>
+  <xs:element name="dataB">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="data"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dataE">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="data"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="supervisor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="link"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="link">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="texto"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.link"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.link">
+    <xs:attribute name="url"/>
+  </xs:attributeGroup>
+  <xs:element name="texto" type="xs:string"/>
+  <xs:element name="team">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="elemento"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="elemento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="id"/>
+        <xs:element ref="texto"/>
+        <xs:element ref="mail"/>
+        <xs:element minOccurs="0" ref="git"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="id" type="xs:string"/>
+  <xs:element name="mail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="link"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="git">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="link"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="abs">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="bold"/>
+        <xs:element ref="italico"/>
+        <xs:element ref="link"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deliverables">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="link"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="data" type="xs:string"/>
+  <xs:element name="bold" type="xs:string"/>
+  <xs:element name="italico" type="xs:string"/>
+</xs:schema>

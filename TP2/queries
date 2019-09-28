@@ -1,0 +1,5 @@
+a)//ARQELEM[CONCEL=" Amares "]/IDENTI
+
+b)//TIPO[@ASSUNTO="arqueossitio"]/../CONCEL
+
+c) //ARQELEM[.//CONCEL=" Montalegre "]/DESCRI
