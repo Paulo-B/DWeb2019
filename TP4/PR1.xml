@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="file:/home/apocas/Desktop/EngenhariaInformatica/DAW/PR.xsd">
+    <metadata>
+        <keyname>TP4</keyname>
+        <title>Servidor Node.js</title>
+        <subtitle>Servidor Node.js utilizando XSLT para transformar XML em HTML</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+        <bdate>Outubro de 2019</bdate>
+        <edate>Outubro de 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>A81139</identifier>
+            <name>Paulo Jorge Bento Rosa</name>
+            <email>paulo_jorge_000_@hotmail.com</email>
+            <git>Paulo-B</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+            Este <b>trabalho</b> consititui na criação de um  servidor <i> NODE.js</i> para os arqueossitios.Usando um XSL parte-se o xml original um por arqelem.E usando uma xsl generica para 
+            transformar os xmls individuais em html.
+        </p>
+    </abstract>
+    <deliverables>
+         <deliverable path="dataset/"> Pasta dos arqelems</deliverable>
+        <deliverable path="arqelem.xsl"> XSL para dividir os arqueossitios em xmls individuais</deliverable>
+        <deliverable path="arq.xml"> XML dos arqueossitios</deliverable>
+        <deliverable path="server.js"> Codigo do servidor Node.js</deliverable>
+    </deliverables>
+</pr>
