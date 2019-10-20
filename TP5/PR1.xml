@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="file:/home/apocas/Desktop/EngenhariaInformatica/DAW/PR.xsd">
+    <metadata>
+        <keyname>TP5</keyname>
+        <title>Gestão de Tarefas</title>
+        <subtitle>Gestão de Tarefas com Node.js e PUG</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+        <bdate>Outubro de 2019</bdate>
+        <edate>Outubro de 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>A81139</identifier>
+            <name>Paulo Jorge Bento Rosa</name>
+            <email>paulo_jorge_000_@hotmail.com</email>
+            <git>Paulo-B</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+        	A aplicação permite inserir novas tarefas como as suas datas para ser apresentadas na propria pagina.De forma inserir utiliza-se forms.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="PR.html"> HTML gerado para o PR</deliverable>
+        <deliverable path="Tarefas.js"> Código Node.js</deliverable>
+        <deliverable path="index.pug"> PUG da pagina inicial</deliverable>
+        <deliverable path="tarefas.json"> JSON para Persistencia</deliverable>
+    </deliverables>
+</pr>

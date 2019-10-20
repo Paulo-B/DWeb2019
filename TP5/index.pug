@@ -1,0 +1,29 @@
+extends layout
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-red
+                h3 Tarefas
+            .w3-container
+                form.w3-container(action='/novatarefa' method='POST')
+                    label.w3-red
+                        b Tarefa
+                    input.w3-input.w3-border.w3-light-red(type='text' name='nome')
+                    label.w3-red
+                        b Data de Entrega
+                    input.w3-input.w3-border.w3-light-red(type='text' name='data')
+                    input.w3-btn.w3-black(type='submit' value='Enviar')
+                    hr
+            header.w3-container.w3-red
+                h3 Lista de Tarefas 
+            .w3-container
+                table.w3-table-all
+                    tr
+                        th Tarefa
+                        th Data de Entrega
+                    each al in lista
+                        tr
+                            td= al.nome
+                            td= al.data
+            footer.w3-container.w3-red
+                address Gerado por Tarefas App
