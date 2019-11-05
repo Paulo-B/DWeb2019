@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/home/apocas/MEGA/Engenharia_Informatica/Master/DAW/PR.xsd">
+    <metadata>
+        <keyname>TP6</keyname>
+        <title>Arquivo Sonoro</title>
+        <subtitle>Website usando Express,Node.js e PUG</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+        <bdate>Outubro de 2019</bdate>
+        <edate>Outubro de 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>A81139</identifier>
+            <name>Paulo Jorge Bento Rosa</name>
+            <email>paulo_jorge_000_@hotmail.com</email>
+            <git>Paulo-B</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+        	O site permite visualizar uma lista dos registos como tambem individualmente. Apagar os registos e tambem atualiza-los.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="PR.html">HTML do Project Record</deliverable>
+        <deliverable path="PR.xml">XML do Project Record</deliverable>
+        <deliverable path="arqsonEVO/routes/index.js">Codigo Principal que trata os pedidos</deliverable>
+        <deliverable path="arqsonEVO/views/">Views da Aplicação</deliverable>
+        <deliverable path="arqsonEVO/arqsonevo.json">Ficheiro JSON que funciona como base de dados</deliverable>
+        <deliverable path="arqsonEVO/public/javascripts/">Scripts usados pelo cliente</deliverable>
+    </deliverables>
+</pr>

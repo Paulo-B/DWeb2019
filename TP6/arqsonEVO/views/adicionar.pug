@@ -1,0 +1,24 @@
+extends layout
+block content
+    .w3-container
+    h1 Arquivo Sonoro
+    .w3-card-4
+            .w3-container
+                .w3-card-4
+                    form.w3-container(action='/adicionar' method='POST' id='form1')
+                        label.w3-teal
+                            b Provincia
+                        input.w3-input.w3-border.w3-light-grey(type='text' name='prov' id='prov')
+                        label.w3-teal
+                            b Local
+                        input.w3-input.w3-border.w3-light-grey(type='text' name='local' id='local')
+                        label.w3-teal
+                         b Título
+                        input.w3-input.w3-border.w3-light-grey(type='text' name='tit' id='tit')
+                        label.w3-teal
+                         b Músico
+                        input.w3-input.w3-border.w3-light-grey(type='text' name='musico' id='musico')
+                        input.w3-btn.w3-blue-grey(type='submit' value='Enviar')
+            footer.w3-container.w3-teal
+                address Gerado por Arquivo Sonoro App
+                a(href='http://localhost:3000') Pagina Principal

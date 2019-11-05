@@ -1,0 +1,25 @@
+extends layout
+block content
+    .w3-container
+    h1 Arquivo Sonoro
+    .w3-card-4
+            .w3-container
+                .w3-card-4
+                a(href='http://localhost:3000/adicionar') Inserir Registos
+                table.w3-table-all
+                    tr  
+                        th Provincia
+                        th Local
+                        th Título
+                        th Músico
+                    each a in lista
+                        tr
+                            td= a.prov
+                            td= a.local
+                            td= a.tit
+                            td= a.musico
+                            td
+                                button.w3-button.w3-circle.w3-blue-grey(onclick="apagaItem('" + a._id.$oid + "')") Apagar
+                                button.w3-button.w3-circle.w3-blue-grey(onclick="location.href='http://localhost:3000/ver/" +a._id.$oid+ "';") Ver
+            footer.w3-container.w3-teal
+                address Gerado por Arquivo Sonoro App

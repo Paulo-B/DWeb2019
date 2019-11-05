@@ -1,0 +1,37 @@
+extends layoutE
+block content
+    .w3-container
+    h1 Arquivo Sonoro
+    .w3-card-4
+            .w3-container
+                .w3-card-4
+                table.w3-table-all
+                    tr  
+                        th Provincia
+                        th Local
+                        th Título
+                        th Músico
+                        tr
+                            td= elemento.prov
+                            td= elemento.local
+                            td= elemento.tit
+                            td= elemento.musico
+            footer.w3-container.w3-teal
+            .w3-container
+                form.w3-container(action='/' method='POST' id='form1')
+                    label.w3-teal
+                        b Provincia
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='prov' id='prov')
+                    label.w3-teal
+                        b Local
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='local' id='local')
+                    label.w3-teal
+                        b Título
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='tit' id='tit')
+                    label.w3-teal
+                        b Músico
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='musico' id='musico')
+                    input.w3-btn.w3-blue-grey(type='sumbit' name='update' value='Update' onclick="updateElem(document.getElementById('prov').value,document.getElementById('local').value,document.getElementById('tit').value,document.getElementById('musico').value)")
+            .w3-card-4
+                address Gerado por Arquivo Sonoro App
+                a(href='http://localhost:3000') Pagina Principal
