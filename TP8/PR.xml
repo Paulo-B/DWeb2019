@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/home/apocas/MEGA/Engenharia_Informatica/Master/DAW/PR.xsd">
+    <metadata>
+        <keyname>TP7</keyname>
+        <title>API de Premios</title>
+        <subtitle>Api para base dados em Mongo</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+        <bdate>Novembro de 2019</bdate>
+        <edate>Novembro de 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>A81139</identifier>
+            <name>Paulo Jorge Bento Rosa</name>
+            <email>paulo_jorge_000_@hotmail.com</email>
+            <git>Paulo-B</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+            Uma API para aceder aos premios , categorias , laureados. Sem interface.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="PR.html">HTML do Project Record</deliverable>
+        <deliverable path="PR.xml">XML do Project Record</deliverable>
+        <deliverable path="Filmes/routes/index.js">Codigo Principal que trata os pedidos</deliverable>
+        <deliverable path="Filmes/controllers/premios.js">Controlador da Aplicação</deliverable>
+        <deliverable path="Filmes/models/premios.js">Modelo da Aplicação</deliverable>
+        </deliverables>
+</pr>
