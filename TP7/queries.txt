@@ -1,0 +1,12 @@
+1)
+
+db.movies.aggregate([{$unwind: {path: "$genres"}},{$group: {_id: "$genres",count: {$sum: 1}}}]).pretty()
+
+2)
+
+db.movies.aggregate([{$redact: {$cond : {if: {$in: ["Drama","$genres"]},then:"$$DESCEND",else: "$$PRUNE"}}},{$project: {_id:0,title:1}}]).pretty()
+
+3)
+
+db.movies.aggregate([{$unwind: "$cast"},{$redact: {$cond : {if: {$in: ["Comedy","$genres"]},then:"$$DESCEND",else: "$$PRUNE"}}},{$project: {_id:0,cast:1}}]).pretty()
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/home/apocas/MEGA/Engenharia_Informatica/Master/DAW/PR.xsd">
+    <metadata>
+        <keyname>TP7</keyname>
+        <title>Website para Filmes</title>
+        <subtitle>Website usando Express,Node.js,PUG,Mongo + Queries</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+        <bdate>Novembro de 2019</bdate>
+        <edate>Novembro de 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>A81139</identifier>
+            <name>Paulo Jorge Bento Rosa</name>
+            <email>paulo_jorge_000_@hotmail.com</email>
+            <git>Paulo-B</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+            O site tem uma base de dados Mongo para persitência dos dados sobre os filmes.È permitido atraves do site aceder a lista de filmes , adicionar novos como tambem mudar de pagina para realizar alterações nas entradas que se prentenda.Apesar de não ser possivel a realização de put atraves do website pode-se fazer atraves de Ferramenta como o Postman.Acompanhado com o site encontram-se três queries para Mongo.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="PR.html">HTML do Project Record</deliverable>
+        <deliverable path="PR.xml">XML do Project Record</deliverable>
+        <deliverable path="Filmes/routes/movies.js">Codigo Principal que trata os pedidos</deliverable>
+        <deliverable path="Filmes/views/">Views da Aplicação</deliverable>
+        <deliverable path="Filmes/controllers/movie.js">Controlador da Aplicação</deliverable>
+        <deliverable path="Filmes/models/movies.js">Modelo da Aplicação</deliverable>
+        <deliverable path="queries.txt">Queries em Mongo solicitadas</deliverable>
+        <deliverable path="Filmes/public/javascripts/">Scripts usados pelo cliente</deliverable>
+    </deliverables>
+</pr>

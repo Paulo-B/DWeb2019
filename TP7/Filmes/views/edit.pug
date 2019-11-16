@@ -1,0 +1,36 @@
+extends layoutE
+
+block content
+  h1 Filmes
+  .w3-card-4
+            header.w3-container
+                h3 Novo filme
+            .w3-container
+                form.w3-container(action='/movies/edit/' + movie.id + '' method='POST' id='form1')
+                    label
+                        b Id
+                    input.w3-input.w3-border.w3-light-grey(type='text' disabled name='id' id='id' value=movie.id)
+                    label
+                        b Titulo
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='title' id='title' value=movie.title)
+                    label
+                        b Ano
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='year' id='year' value=movie.year)
+                    label(id="addCast")
+                        b Cast
+                    each c in movie.cast
+                        input.w3-input.w3-border.w3-light-grey(type='text' name='cast' id='cast' value=c)
+                    button(type="button" id="add") Add Cast
+                    script(src="./caixa.js")
+                    hr
+                    label(id="addGen")
+                        b Genero
+                    each g in movie.genres
+                        input.w3-input.w3-border.w3-light-grey(type='text' name='genres' id='genres' value=g)
+                    button(type="button" id="addG") Add Genre
+                    script(src="./caixaG.js")
+                    hr
+                    input.w3-btn.w3-blue-grey(name='editar' type='submit' value='Editar')
+            footer.w3-container.w3-teal
+                address Gerado por Filmes App
+
