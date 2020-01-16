@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="file:/home/apocas/Desktop/EngenhariaInformatica/DAW/PR.xsd">
+    <metadata>
+        <keyname>Teste Daw</keyname>
+        <title>Teste realizado no dia 16 de janeiro</title>
+        <subtitle>Api + interface do Clav</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+        <bdate>Janeiro de 2019</bdate>
+        <edate>Janeiro de 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>A81139</identifier>
+            <name>Paulo Jorge Bento Rosa</name>
+            <email>paulo_jorge_000_@hotmail.com</email>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+            Para correr a API basta fazer os comandos normais do npm, o dataset foi transformado a partir do conversor online , depois foi alterado a partir do comando replace, de forma, de ficar na forma final em que se encontra no JSON ARRAY.A api funciona segundo as rotas estabelecidadas. Utilizando o comando mongoimport fez-se o import do dataset modificado para o Mongo. As queries de aquecimento para o exercicio 2 foram feitas com o Postman.
+        </p>
+        <p>
+        Para o site criou-se as duas paginas como pedido com a funcionalidade de pagina anterior.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="PR.xml"> PR</deliverable>
+        <deliverable path="PR.xsl">XSL do PR</deliverable>
+        <deliverable path="PR.html"> HTML gerado para o PR</deliverable>
+        <deliverable path="Dataset/"> Pasta onde esta o Dataset original e o modificado</deliverable>
+        <deliverable path="respostas.txt"> respostas as perguntas de "aquecimento"</deliverable>
+        <deliverable path="Clav/"> Pasta onde esta o primeiro exercicio</deliverable>
+        <deliverable path="Obras/"> Pasta onde esta o segundo exercicio</deliverable>
+    </deliverables>
+</pr>

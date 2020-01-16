@@ -1,0 +1,60 @@
+extends layout
+
+block content
+  .w3-container
+    h1=entidade.designacao
+    h2 Info da entidade
+    p=anterior
+    table.w3-table-all
+            tr
+                th Estado
+                th Sigla
+                th Sioe
+                th Designação
+                th Internacional
+                tr
+                    td= ent.estado
+                    td= ent.sigla
+                    td= ent.sioe
+                    td= ent.designacao
+                    td= ent.internacional
+    .w3-container
+    h2 Tipologias
+    table.w3-table-all
+            tr
+                th Sigla
+                th Designação
+                th Id
+            each tip in tipo
+                tr
+                    td
+                        a(href="http://localhost:3000/tipologia/"+tip.id)=tip.sigla
+                    td
+                        a(href="http://localhost:3000/tipologia/"+tip.id)=tip.designacao
+                    td
+                        a(href="http://localhost:3000/tipologia/"+tip.id)=tip.id
+    .w3-container
+    h2 Processos dono
+    table.w3-table-all
+            tr
+                th Codigo
+                th Titulo
+            each d in don
+                tr
+                    td= d.codigo
+                    td= d.titulo
+    .w3-container
+    h2 Processos Participante
+    table.w3-table-all
+            tr
+                th TipoPar
+                th Codigo
+                th Titulo
+            each p in part
+                tr
+                    td= p.tipoPar
+                    td= p.codigo
+                    td= p.titulo
+    .w3-container
+        p 
+            a(href="http://localhost:3000/") Voltar ao inicio

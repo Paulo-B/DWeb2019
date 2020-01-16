@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1 Teste Daw 2020
+  h3 Listagem de todas as entidades
+  table.w3-table-all
+        tr
+            th Sigla
+            th Designação
+        each ent in entidades
+            tr
+                td
+                  a(href="http://localhost:3000/entidade/"+ent.id)=ent.sigla
+                td= ent.designacao

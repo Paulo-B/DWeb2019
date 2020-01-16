@@ -1,0 +1,50 @@
+1 - As entidades catalogadas sao 549, foi obtido o resultado atraves do Postman fazendo 
+
+http://clav-api.dglab.gov.pt/api/entidades?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1Nzg4NjAwNTQsImV4cCI6MTU4MTQ1MjA1NH0.HIlH4_Ao6504qaLhhbZ2_OtDzaZaG5FeYy-Yc2d9lwQ
+
+2 - As tipologias as quais pertence são:
+
+	- Administraçao publica
+	- Autoridades de supervisão e fiscalização
+	
+O resultado foi obtido atraves do seginte get: 
+
+http://clav-api.dglab.gov.pt/api/entidades/ent_ACT/tipologias?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1Nzg4NjAwNTQsImV4cCI6MTU4MTQ1MjA1NH0.HIlH4_Ao6504qaLhhbZ2_OtDzaZaG5FeYy-Yc2d9lwQ
+
+3 - Os processos que participam como Iniciador , assume-se que iniciador é participante e que tenha o tipoPar a "temParticpanteIniciador", visto que foi encontrado na API iniciador, são os seguintes:
+
+Registo nacional de condutores
+
+
+Estes foram obtidos com o seguinte Get:
+
+http://clav-api.dglab.gov.pt/api/entidades/ent_ACT/tipologias?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1Nzg4NjAwNTQsImV4cCI6MTU4MTQ1MjA1NH0.HIlH4_Ao6504qaLhhbZ2_OtDzaZaG5FeYy-Yc2d9lwQ
+
+4 - Os processos quais o SEF é dono são os seguintes:
+
+        Produção e intercâmbio de informação estratégica para segurança interna e defesa"
+        Registo de cidadãos da União Europeia"
+        Atribuição e registo de estatuto de igualdade"
+        Emissão de passaportes"
+        Emissão de documentos de viagem a estrangeiros"
+        Emissão de título de residente"
+        Identificação de estrangeiros"
+        Abandono voluntário do território nacional"
+        Afastamento coercivo do território nacional"
+        Condução à fronteira"
+        Apoio de forças de segurança a diligências"
+        Controlo de pessoas nas fronteiras"
+        Vigilância da fronteira"
+        Emissão de vistos"
+        Autorização de trânsito para efeitos de afastamento por via aérea"
+        Autorização de residência"
+        Manifestações de interesse"
+        Processamento de pedidos de asilo"
+        Readmissão de estrangeiros em situação ilegal"
+        Expulsão judicial"
+        Subsídios para apoio ao regresso voluntário"
+
+Foram obtidos com o seguinte Get:
+
+
+http://clav-api.dglab.gov.pt/api/entidades/ent_SEF/intervencao/dono?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1Nzg4NjAwNTQsImV4cCI6MTU4MTQ1MjA1NH0.HIlH4_Ao6504qaLhhbZ2_OtDzaZaG5FeYy-Yc2d9lwQ

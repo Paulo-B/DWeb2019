@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  .w3-container
+    h1=tipo.designacao
+    h2 Info da Tipologia
+    
+    table.w3-table-all
+            tr
+                th Estado
+                th Sigla
+                th Designação
+                tr
+                    td= tipo.estado
+                    td= tipo.sigla
+                    td= tipo.designacao
+    .w3-container
+        a(href="http://localhost:3000"+ult) Página anterior
+        p 
+            a(href="http://localhost:3000/") Voltar ao inicio
+    
