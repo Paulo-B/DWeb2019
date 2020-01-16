@@ -14,7 +14,7 @@ router.get('/', function(req, res, next) {
 
   axios.get('http://clav-api.dglab.gov.pt/api/entidades?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1Nzg4NjAwNTQsImV4cCI6MTU4MTQ1MjA1NH0.HIlH4_Ao6504qaLhhbZ2_OtDzaZaG5FeYy-Yc2d9lwQ')
   .then(dados=>{
-    res.render('index',{ent:dados.data})
+    res.render('index',{entt:dados.data})
   })
   .catch(erro=>{
     res.render('error',{error:erro});
@@ -43,7 +43,7 @@ router.get('/entidade/:id', function(req, res, next) {
         axios.get('http://clav-api.dglab.gov.pt/api/entidades/'+id+'/intervencao/participante?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1Nzg4NjAwNTQsImV4cCI6MTU4MTQ1MjA1NH0.HIlH4_Ao6504qaLhhbZ2_OtDzaZaG5FeYy-Yc2d9lwQ')
         .then(dados=>{
           var participante = dados.data;
-          res.render('entidade',{ent:info,tipo:tipologias,don:dona,part:participante})
+          res.render('entidade',{entt:info,tipo:tipologias,don:dona,part:participante})
         })
         .catch(erro=>{
           res.render('error',{error:erro});

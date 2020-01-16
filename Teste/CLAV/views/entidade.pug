@@ -2,7 +2,7 @@ extends layout
 
 block content
   .w3-container
-    h1=entidade.designacao
+    h1=entt.designacao
     h2 Info da entidade
     p=anterior
     table.w3-table-all
@@ -13,11 +13,11 @@ block content
                 th Designação
                 th Internacional
                 tr
-                    td= ent.estado
-                    td= ent.sigla
-                    td= ent.sioe
-                    td= ent.designacao
-                    td= ent.internacional
+                    td= entt.estado
+                    td= entt.sigla
+                    td= entt.sioe
+                    td= entt.designacao
+                    td= entt.internacional
     .w3-container
     h2 Tipologias
     table.w3-table-all
