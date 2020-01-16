@@ -32,5 +32,6 @@
         <deliverable path="respostas.txt"> respostas as perguntas de "aquecimento"</deliverable>
         <deliverable path="Clav/"> Pasta onde esta o primeiro exercicio</deliverable>
         <deliverable path="Obras/"> Pasta onde esta o segundo exercicio</deliverable>
+        <deliverable path="https://github.com/Paulo-B/DWeb2019"> Link do git</deliverable>
     </deliverables>
 </pr>
